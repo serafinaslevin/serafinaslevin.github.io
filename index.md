@@ -1,5 +1,1 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Here I post about various technical concepts in the field of machine learning. It mostly functions as a reference for myself of all the things I've learned -- but if anyone else is interested, read on! 
