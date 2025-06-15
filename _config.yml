@@ -4,8 +4,7 @@ description: "An educational blog about the technical details of machine learnin
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "serafina.slevin\<at\>gmail.com"
-#twitter_username: "twitteruser"
+email: "serafina.slevin&lt;at&gt;gmail.com"
 github_username: "serafinaslevin"
 linkedin_username: "serafinaslevin"
 #facebook_username: username
