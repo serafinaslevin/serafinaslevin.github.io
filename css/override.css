@@ -1,45 +1,41 @@
-hr {
-  margin-top: 30px;
-  margin-bottom: 20px;
+/* Overall site styling */
+body {
+  background-color: #fff9f2; /* Light pink background */
+  color: #2c3e50; /* Dark blue-gray small text */
 }
 
-/* Post navigation links */
-.post_navi {
-  display: flex;
+/* Main content area for blog posts */
+.page-content {
+  background-color: #fffcf8; /* Light pink content background */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+main.page-content:has(.home) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.post_navi-label {
-  font-size: 0.8em;
-  opacity: 0.5;
+/* Style the intro section (no white background) */
+.home .home-intro {
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
-.post_navi .post_navi-item {
-  padding: 0 2.2em;
-  width: 50%;
-  position: relative;
-  color: inherit !important;
+/* Style only the posts section with white background */
+.posts-section {
+  background-color: #fffcf8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.post_navi .nav_prev {
-  text-align: left;
+.site-footer .blog-title {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #424242;
 }
 
-.post_navi .nav_next {
-  text-align: right;
-}
-
-.post_navi .nav_prev .post_navi-arrow {
-  left: 0;
-}
-
-.post_navi .nav_next .post_navi-arrow {
-  right: 0;
-}
-
-.post_navi .post_navi-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5em;
-  opacity: 0.3;
-}

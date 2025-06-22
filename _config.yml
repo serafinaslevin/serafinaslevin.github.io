@@ -1,25 +1,22 @@
-title: "Serafina Waz Here"
+title: "Signal and Noise"
 author: "Serafina Slevin"
-description: "An educational blog about the technical details of machine learning, by me for me." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "An educational blog about the technical details of machine learning." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "serafina.slevin&lt;at&gt;gmail.com"
 github_username: "serafinaslevin"
 linkedin_username: "serafinaslevin"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-#theme: minima
+header_pages:
+  - readers_index.md
+  - resources.md
+  - archive.md
+
+incremental: false
+
+
 theme: minima
-rss: rss
 
 kramdown:
   syntax_highlighter_opts:
