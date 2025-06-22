@@ -12,6 +12,7 @@ header_pages:
   - readers_index.md
   - resources.md
   - archive.md
+  - aboutme.md
 
 incremental: false
 
