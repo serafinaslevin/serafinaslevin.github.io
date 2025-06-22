@@ -1,0 +1,30 @@
+
+.site-footer .footer-col-3 p {
+  font-style: italic;
+}
+
+.site-footer .blog-title {
+  font-size: 1.4em;
+  color: #424242; 
+  font-weight: 350;
+}
+
+.footer-col-wrapper {
+  display: flex;
+}
+
+/* makes the first col take up 70 percent of the width */
+.footer-col-3 { 
+  flex: 0 0 70%;
+}
+
+.site-footer {
+  border-top: none;
+}
+
+.footer-col-1 {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
