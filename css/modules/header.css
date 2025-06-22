@@ -1,0 +1,164 @@
+/* Dynamic header height variables - EDIT THESE TO CHANGE HEADER SIZE */
+.site-header {
+  /* Desktop header height */
+  --header-height-desktop: 72px;
+  /* Tablet header height */
+  --header-height-tablet: 64px;
+  /* Mobile header height */
+  --header-height-mobile: 56px;
+  
+  /* Logo padding (space around logo) */
+  --logo-padding: 12px;
+}
+
+/* Header styling with responsive heights */
+.site-header {
+  border-bottom: none;
+  border-top: none;
+  min-height: var(--header-height-desktop);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.site-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This pushes left content to far left, right content to far right */
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem 0 1rem; /* Add back some padding so content doesn't touch screen edges */
+}
+
+/* Left side: Site title + logo */
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Space between title and logo */
+  height: 100%;
+  margin: 0; /* Remove any default margins */
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  color: #424242;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  text-decoration: none;
+  color: #424242;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: var(--logo-padding) 0;
+}
+
+.logo-img {
+  height: calc(var(--header-height-desktop) - (var(--logo-padding) * 2));
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Right side: Navigation */
+.site-nav {
+  flex-shrink: 0;
+  margin: 0; /* Remove any default margins */
+}
+
+.site-nav .page-link {
+  color: #424242;
+  line-height: var(--header-height-desktop);
+  margin-left: 20px;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1024px) {
+  .site-header {
+    min-height: var(--header-height-tablet);
+  }
+  
+  .logo-img {
+    height: calc(var(--header-height-tablet) - (var(--logo-padding) * 2));
+  }
+  
+  .site-nav .page-link {
+    line-height: var(--header-height-tablet);
+  }
+  
+  .site-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-header {
+    min-height: var(--header-height-mobile);
+  }
+  
+  .logo-img {
+    height: calc(var(--header-height-mobile) - (var(--logo-padding) * 2));
+  }
+  
+  .site-nav .page-link {
+    line-height: var(--header-height-mobile);
+  }
+  
+  .site-title {
+    font-size: 22px;
+  }
+  
+  .site-branding {
+    gap: 12px; /* Smaller gap on mobile */
+  }
+}
+
+/* Mobile menu trigger styling */
+.nav-trigger {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .menu-icon > svg {
+    fill: #424242;
+  }
+
+  .nav-trigger:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .trigger {
+    clear: both;
+    display: none;
+  }
+
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 0;
+    line-height: 1.5;
+  }
+}
